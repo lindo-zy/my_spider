@@ -93,6 +93,7 @@ def get_left_urls(enter_url, headers):
                     # 匹配专业
                     ppzy = (final_soup.find_all('div', 'major_div_in')[6]).get_text('|', strip=True)
                     print(ppzy)
+
                     try:
                         args = (right_name, child_name, child_link_name, gwdy, gwxz, gzlx, zyjs, zytd, rztj, fzkj, ppzy)
 
